@@ -13,30 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Solved">
-      <UniqueIdentifier>{f9020d7e-f716-456c-a003-ccb485008dec}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="019. Remove Nth Node From End of List.cpp">
-      <Filter>Source Files\Solved</Filter>
-    </ClCompile>
-    <ClCompile Include="035. Search Insert Position.cpp">
-      <Filter>Source Files\Solved</Filter>
-    </ClCompile>
-    <ClCompile Include="A2DD.cpp">
+    <ClCompile Include="UnitTest1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mian.cpp">
+    <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="A2DD.h">
+    <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
 </Project>
