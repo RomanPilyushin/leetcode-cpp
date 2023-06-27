@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "leetcode-cpp", "leetcode-cpp\leetcode-cpp.vcxproj", "{F55AA6C1-5BC7-454B-AC80-9C3A2F573897}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "035. Search Insert Position", "leetcode-cpp\leetcode-cpp.vcxproj", "{F55AA6C1-5BC7-454B-AC80-9C3A2F573897}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest1", "UnitTest1\UnitTest1.vcxproj", "{7C8E470B-8F0C-48BF-BE7A-845D6AB5E1D9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "019. Remove Nth Node From End of List", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{E8A71B5C-ADA1-4111-8670-81958D34D147}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "217. Contains Duplicate", "217. Contains Duplicate\217. Contains Duplicate.vcxproj", "{00E560AC-721C-4347-BC5B-A4D11269C5DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,22 @@ Global
 		{7C8E470B-8F0C-48BF-BE7A-845D6AB5E1D9}.Release|x64.Build.0 = Release|x64
 		{7C8E470B-8F0C-48BF-BE7A-845D6AB5E1D9}.Release|x86.ActiveCfg = Release|Win32
 		{7C8E470B-8F0C-48BF-BE7A-845D6AB5E1D9}.Release|x86.Build.0 = Release|Win32
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Debug|x64.ActiveCfg = Debug|x64
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Debug|x64.Build.0 = Debug|x64
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Debug|x86.ActiveCfg = Debug|Win32
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Debug|x86.Build.0 = Debug|Win32
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Release|x64.ActiveCfg = Release|x64
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Release|x64.Build.0 = Release|x64
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Release|x86.ActiveCfg = Release|Win32
+		{E8A71B5C-ADA1-4111-8670-81958D34D147}.Release|x86.Build.0 = Release|Win32
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Debug|x64.ActiveCfg = Debug|x64
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Debug|x64.Build.0 = Debug|x64
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Debug|x86.Build.0 = Debug|Win32
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Release|x64.ActiveCfg = Release|x64
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Release|x64.Build.0 = Release|x64
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Release|x86.ActiveCfg = Release|Win32
+		{00E560AC-721C-4347-BC5B-A4D11269C5DC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

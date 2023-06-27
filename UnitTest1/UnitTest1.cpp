@@ -3,6 +3,12 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
+int getSum(int x, int y)
+{
+	return x + y;
+}
+
+
 namespace UnitTest1
 {
 	TEST_CLASS(UnitTest1)
@@ -11,7 +17,25 @@ namespace UnitTest1
 		
 		TEST_METHOD(TestMethod1)
 		{
-			Assert::IsTrue(2 == 2);
+			int x = 5;
+			int y = 3;
+
+			Assert::IsTrue(getSum(x, y) == 2);
 		}
+
+	};
+
+	TEST_CLASS(UnitTest2)
+	{
+	public:
+
+		TEST_METHOD(TestMethod2)
+		{
+			int x = 5;
+			int y = 3;
+
+			Assert::IsTrue(getSum(x, y) == 8);
+		}
+
 	};
 }
