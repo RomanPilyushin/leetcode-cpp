@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include <set>
  
 using namespace std;
 
@@ -34,8 +36,8 @@ Output: true
 */
 
 
-
-bool containsDuplicate(vector<int>& nums)
+// Brute Force
+bool containsDuplicateBrute(vector<int>& nums)
 {
 
     int sizeArray = nums.size();
@@ -54,6 +56,24 @@ bool containsDuplicate(vector<int>& nums)
 }
 
 
+//Sorted Approach
+bool containsDuplicateSorted(vector<int>& nums) 
+{
+    sort(nums.begin(), nums.end());
+
+    for (int i = 0; i < nums.size() - 1; i++) 
+    {
+        if (nums[i] == nums[i + 1]) return true;
+    }
+    return false;
+}
+
+
+//Set Approach
+bool containsDuplicateSet(vector<int>& nums) 
+{
+    return nums.size() > set<int>(nums.begin(), nums.end()).size();
+}
 
 
 
@@ -64,9 +84,8 @@ int main()
     vector<int> exp2{ 1, 2, 3, 4 };
     vector<int> exp3{ 1, 1, 1, 3, 3, 4, 3, 2, 4, 2 };
 
-    std::cout << containsDuplicate(exp1) << std::endl;
-    std::cout << containsDuplicate(exp2) << std::endl;
-    std::cout << containsDuplicate(exp3) << std::endl;
+    std::cout << containsDuplicateSet(exp1) << std::endl;
+    std::cout << containsDuplicateSet(exp2) << std::endl;
+    std::cout << containsDuplicateSet(exp3) << std::endl;
 
-    //std::cout << "Hello World!\n";
 }
