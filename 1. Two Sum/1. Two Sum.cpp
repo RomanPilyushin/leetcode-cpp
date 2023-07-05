@@ -29,6 +29,7 @@ Output: [0,1]
 
 #include <iostream>
 #include <vector>
+#include <unordered_map>
 using namespace std;
 
 //Brute Force
@@ -47,13 +48,34 @@ vector<int> twoSum(vector<int>& nums, int target)
         return {};
 }
 
+//Optimized Code
+vector<int> twoSumOpt(vector<int>& nums, int target) 
+{
+    unordered_map<int, int> mp;
+
+    for (int i = 0; i < nums.size(); i++) 
+    {
+        if (mp.find(target - nums[i]) == mp.end())
+        {
+            mp[nums[i]] = i;
+        }
+        else
+        {
+            return { mp[target - nums[i]], i };
+        }     
+    }
+
+    return {};
+}
+
+
 
 int main()
 {
     vector<int> exp1{ 2, 7, 11, 15 };
     //vector<int> exp2{ 3, 2, 4 };
 
-    vector<int> result = twoSum(exp1, 9);
+    vector<int> result = twoSumOpt(exp1, 8);
 
     for (auto i : result)   
         std::cout << i << ' ';
