@@ -48,7 +48,7 @@ vector<int> twoSum(vector<int>& nums, int target)
         return {};
 }
 
-//Optimized Code
+//Optimized
 vector<int> twoSumOpt(vector<int>& nums, int target) 
 {
     unordered_map<int, int> mp;
@@ -75,7 +75,7 @@ int main()
     vector<int> exp1{ 2, 7, 11, 15 };
     //vector<int> exp2{ 3, 2, 4 };
 
-    vector<int> result = twoSumOpt(exp1, 8);
+    vector<int> result = twoSumOpt(exp1, 9);
 
     for (auto i : result)   
         std::cout << i << ' ';

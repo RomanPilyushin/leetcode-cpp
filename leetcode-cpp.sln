@@ -15,7 +15,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "268. Missing Number", "268.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "121. Best Time to Buy and Sell Stock", "121. Best Time to Buy and Sell Stock\121. Best Time to Buy and Sell Stock.vcxproj", "{4BE50F34-4AD1-4A81-A42C-EFAB3EA3860D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1. Two Sum", "1. Two Sum\1. Two Sum.vcxproj", "{16FCF93B-907A-4EC2-AAF6-01D13BD0D6FD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "001. Two Sum", "1. Two Sum\1. Two Sum.vcxproj", "{16FCF93B-907A-4EC2-AAF6-01D13BD0D6FD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "283. Move Zeroes", "283. Move Zeroes\283. Move Zeroes.vcxproj", "{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,14 @@ Global
 		{16FCF93B-907A-4EC2-AAF6-01D13BD0D6FD}.Release|x64.Build.0 = Release|x64
 		{16FCF93B-907A-4EC2-AAF6-01D13BD0D6FD}.Release|x86.ActiveCfg = Release|Win32
 		{16FCF93B-907A-4EC2-AAF6-01D13BD0D6FD}.Release|x86.Build.0 = Release|Win32
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Debug|x64.ActiveCfg = Debug|x64
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Debug|x64.Build.0 = Debug|x64
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Debug|x86.ActiveCfg = Debug|Win32
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Debug|x86.Build.0 = Debug|Win32
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Release|x64.ActiveCfg = Release|x64
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Release|x64.Build.0 = Release|x64
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Release|x86.ActiveCfg = Release|Win32
+		{CDBCA9B7-6F54-4E4C-A1BD-D104D480073D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
