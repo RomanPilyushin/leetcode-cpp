@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0e247bec-36df-44b0-a0aa-6b7d0f6ecba4}</ProjectGuid>
+    <ProjectGuid>{61166b8d-e7e7-43f7-8c62-b745f459de91}</ProjectGuid>
     <RootNamespace>My021MergeTwoSortedLists</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

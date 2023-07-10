@@ -13,54 +13,91 @@ Output: [1,1,2,3,4,4]
 */
 
 #include <iostream>
+using namespace std;
 
-struct ListNode 
-{
+
+struct Node {
     int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
+    Node* next;
+    // Pointer pointing towards next node
 };
 
+Node* mergeTwoLists(Node* list1, Node* list2)
+{
+    Node* dummy = new Node(); 
+    Node* temp = dummy;
 
-class Solution {
-public:
-    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        ListNode* dummy, * temp;
-        dummy = new ListNode();
-        temp = dummy;
-
-        //when both list1 and list2 isn't empty
-        while (list1 && list2) {
-            if (list1->val < list2->val) {
-                temp->next = list1;
-                list1 = list1->next;
-            }
-            else {
-                temp->next = list2;
-                list2 = list2->next;
-            }
-            temp = temp->next;
+    //when both list1 and list2 isn't empty
+    while (list1 && list2) {
+        if (list1->val < list2->val) {
+            temp->next = list1;
+            list1 = list1->next;
         }
-
-        // we reached at the end of one of the list
-        if (list1) temp->next = list1;
-        if (list2) temp->next = list2;
-
-        return dummy->next;
+        else {
+            temp->next = list2;
+            list2 = list2->next;
+        }
+        temp = temp->next;
     }
-};
+
+    // we reached at the end of one of the list
+    if (list1) temp->next = list1;
+    if (list2) temp->next = list2;
+
+    return dummy->next;
+}
 
 
+void initNode(struct Node* head, int n) {
+	head->val = n;
+	head->next = NULL;
+}
+
+void addNode(struct Node* head, int n) {
+	Node* newNode = new Node;
+	newNode->val = n;
+	newNode->next = NULL;
+
+	Node* cur = head;
+	while (cur) {
+		if (cur->next == NULL) {
+			cur->next = newNode;
+			return;
+		}
+		cur = cur->next;
+	}
+}
+
+void display(struct Node* head) {
+	Node* list = head;
+	while (list) {
+		cout << list->val << " ";
+		list = list->next;
+	}
+	cout << endl;
+	cout << endl;
+}
 
 int main()
 {
-    ListNode list1 = ListNode(1, new ListNode(2, new ListNode(4)));
-    ListNode list2 = ListNode(1, new ListNode(3, new ListNode(4)));
+	struct Node* head1 = new Node;
+	initNode(head1, 1);
+	addNode(head1, 2);
+	addNode(head1, 4);
+	display(head1);
 
-    Solution x = new Solution();
+	cout << endl;
 
-    ListNode res = x.mergeTwoLists(list1, list2);
+	struct Node* head2 = new Node;
+	initNode(head2, 1);
+	addNode(head2, 3);
+	addNode(head2, 4);
+	display(head2);
 
+	cout << endl;
+
+	Node* res = mergeTwoLists(head1, head2);
+	display(res);
+
+	return 0;
 }

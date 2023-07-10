@@ -22,6 +22,15 @@ Explanation: 2 does not exist in nums so return -1
 
 
 #include <iostream>
+#include <vector>
+using namespace std;
+
+
+int search(vector<int>& nums, int target) 
+{
+    return 0;
+}
+
 
 int main()
 {
