@@ -26,13 +26,35 @@ Explanation: 2 does not exist in nums so return -1
 using namespace std;
 
 
-int search(vector<int>& nums, int target) 
+int binarySearch(vector<int>& nums, int target) 
 {
-    return 0;
+    int low = 0;
+    int high = nums.size() - 1;
+
+    while (low <= high) 
+    {
+        int mid = low + (high - low) / 2;
+
+        if (nums[mid] == target) 
+        {
+            return mid;
+        }
+        else if (nums[mid] < target) 
+        {
+            low = mid + 1;
+        }
+        else if (nums[mid] > target)
+        {
+            high = mid - 1;
+        }
+    }
+    return -1;
 }
 
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    vector<int> exp{ 1, 2, 5, 5, 7, 9, 10 };
+
+    std::cout << binarySearch(exp, 7) << std::endl;
 }
