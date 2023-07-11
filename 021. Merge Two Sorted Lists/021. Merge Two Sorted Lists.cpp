@@ -22,32 +22,6 @@ struct Node {
     // Pointer pointing towards next node
 };
 
-Node* mergeTwoLists(Node* list1, Node* list2)
-{
-    Node* dummy = new Node(); 
-    Node* temp = dummy;
-
-    //when both list1 and list2 isn't empty
-    while (list1 && list2) {
-        if (list1->val < list2->val) {
-            temp->next = list1;
-            list1 = list1->next;
-        }
-        else {
-            temp->next = list2;
-            list2 = list2->next;
-        }
-        temp = temp->next;
-    }
-
-    // we reached at the end of one of the list
-    if (list1) temp->next = list1;
-    if (list2) temp->next = list2;
-
-    return dummy->next;
-}
-
-
 void initNode(struct Node* head, int n) {
 	head->val = n;
 	head->next = NULL;
@@ -78,6 +52,70 @@ void display(struct Node* head) {
 	cout << endl;
 }
 
+
+
+//Iterative Approach
+Node* mergeTwoListsIterative(Node* list1, Node* list2)
+{
+    Node* dummy = new Node(); 
+    Node* temp = dummy;
+
+    //when both list1 and list2 isn't empty
+    while (list1 && list2) 
+	{
+        if (list1->val < list2->val) 
+		{
+            temp->next = list1;
+            list1 = list1->next;
+        }
+        else 
+		{
+            temp->next = list2;
+            list2 = list2->next;
+        }
+        temp = temp->next;
+    }
+
+    // we reached at the end of one of the list
+    if (list1) temp->next = list1;
+    if (list2) temp->next = list2;
+
+    return dummy->next;
+}
+
+
+//Recursive Approach
+Node* mergeTwoListsRecursive(Node* list1, Node* list2)
+{
+	// if list1 happen to be NULL
+	// we will simply return list2.
+	if (list1 == NULL)
+	{
+		return list2;
+	}
+
+	// if list2 happen to be NULL
+	// we will simply return list1.
+	if (list2 == NULL)
+	{
+		return list1;
+	}
+
+	// if value pointend by l1 pointer is less than equal to value pointed by l2 pointer
+	// we wall call recursively l1 -> next and whole l2 list.
+	if (list1->val <= list2->val)
+	{
+		list1->next = mergeTwoListsRecursive(list1->next, list2);
+		return list1;
+	}
+	// we will call recursive l1 whole list and l2 -> next
+	else
+	{
+		list2->next = mergeTwoListsRecursive(list1, list2->next);
+		return list2;
+	}
+}
+
 int main()
 {
 	struct Node* head1 = new Node;
@@ -96,7 +134,7 @@ int main()
 
 	cout << endl;
 
-	Node* res = mergeTwoLists(head1, head2);
+	Node* res = mergeTwoListsRecursive(head1, head2);
 	display(res);
 
 	return 0;
