@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "021. Merge Two Sorted Lists
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinkedList", "LinkedList\LinkedList.vcxproj", "{086724B1-D2CA-444F-9803-ED515036302D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "203. Remove Linked List Elements", "203. Remove Linked List Elements\203. Remove Linked List Elements.vcxproj", "{CAD0A88F-784F-4542-9465-0D4C092A8180}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{086724B1-D2CA-444F-9803-ED515036302D}.Release|x64.Build.0 = Release|x64
 		{086724B1-D2CA-444F-9803-ED515036302D}.Release|x86.ActiveCfg = Release|Win32
 		{086724B1-D2CA-444F-9803-ED515036302D}.Release|x86.Build.0 = Release|Win32
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Debug|x64.ActiveCfg = Debug|x64
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Debug|x64.Build.0 = Debug|x64
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Debug|x86.ActiveCfg = Debug|Win32
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Debug|x86.Build.0 = Debug|Win32
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Release|x64.ActiveCfg = Release|x64
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Release|x64.Build.0 = Release|x64
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Release|x86.ActiveCfg = Release|Win32
+		{CAD0A88F-784F-4542-9465-0D4C092A8180}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
